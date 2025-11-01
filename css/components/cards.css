@@ -1,0 +1,4 @@
+.card img{height:180px;object-fit:cover}
+.card h3{font-size:var(--font-size-lg);margin-bottom:6px}
+.card p{color:var(--color-text-light);font-size:var(--font-size-sm)}
+.card .card-footer .btn{padding:8px 12px;border-radius:8px}
