@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Lucas Silva</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="Logo Lucas Silva" class="logo">
+      </a>
+
+      <nav class="menu" aria-label="Menu Principal">
+        <ul class="menu-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="pages/sobre.html">Sobre</a></li>
+          <li class="dropdown" aria-haspopup="true">
+            <button class="dropdown-toggle" aria-expanded="false">Projetos</button>
+            <ul class="submenu" aria-label="Submenu Projetos">
+              <li><a href="pages/projetos.html#web">Web</a></li>
+              <li><a href="pages/projetos.html#design">Design</a></li>
+              <li><a href="pages/projetos.html#outros">Outros</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="pages/projetos.html">Ver Projetos</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid-container" id="main" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Olá — sou Lucas Silva</h1>
+        <p class="lead">Desenvolvedor front-end focado em experiências acessíveis e responsivas.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="pages/projetos.html">Ver Projetos</a>
+          <a class="btn btn-ghost" href="pages/sobre.html">Sobre mim</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section container" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projetos em destaque</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="img/projeto1.jpg" alt="Thumbnail do Projeto 1">
+          <div class="card-body">
+            <h3>Landing Page Responsiva</h3>
+            <p>Landing desenvolvida com Grid e animações suaves. Acessibilidade e performance.</p>
+            <div class="card-footer">
+              <span class="badge">Web</span>
+              <a href="#" class="btn btn-secondary">Ver</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/projeto2.jpg" alt="Thumbnail do Projeto 2">
+          <div class="card-body">
+            <h3>Design de Interface</h3>
+            <p>UI kit e componentes reutilizáveis para aplicações web.</p>
+            <div class="card-footer">
+              <span class="badge">Design</span>
+              <a href="#" class="btn btn-secondary">Ver</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="cta container">
+      <h2>Quer trabalhar comigo?</h2>
+      <p>Me mande uma mensagem ou veja meu portfólio completo.</p>
+      <a href="pages/contato.html" class="btn btn-primary">Entrar em contato</a>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© 2025 Lucas Silva — Todos os direitos reservados.</p>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
